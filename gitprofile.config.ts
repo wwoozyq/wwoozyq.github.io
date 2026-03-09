@@ -31,7 +31,7 @@ const CONFIG = {
           title: 'Deep Learning for Cardiac MRI Analysis',
           description:
             'Research project on cardiac MRI analysis in a medical imaging research group. Built robust preprocessing and normalization pipelines, validated annotation quality, and developed PyTorch-based segmentation models for cardiac structure analysis.',
-          imageUrl: '/images/MRI.png'
+          imageUrl: '/images/MRI.png',
           link: 'https://github.com/wwoozyq',
         },
         {
