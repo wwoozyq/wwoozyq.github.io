@@ -53,8 +53,15 @@ const CONFIG = {
           description:
             'A collaborative task scheduling and productivity application with intelligent task parsing, OCR-assisted input, and adaptive rescheduling workflows. Displayed here as an engineering-oriented project experience.',
      imageUrl:'/agent.png',
-          link: 'https://github.com/Valkqs/Savior_of_P_people',
+          link: 'https://github.com/wwoozyq/Savior_of_P_people',
         },
+        {
+  title: 'Biomedical Data Science Code Agent',
+  description:
+    'A biomedical data science reasoning-and-coding agent based on the ReAct paradigm, supporting multi-agent collaboration for data analysis, predictive modeling, SQL querying, and quality assurance, with a Streamlit-based web interface.',
+  imageUrl: '/bioagent.png',
+  link: 'https://github.com/wwoozyq/biomedical-code-agent',
+},
       ],
     },
   },
