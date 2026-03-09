@@ -9,7 +9,7 @@ const CONFIG = {
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
-  base: '/gitprofile/',
+  base: '/',
   projects: {
     github: {
       display: true, // Display GitHub projects?
@@ -51,49 +51,34 @@ const CONFIG = {
       ],
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+  seo: {
+  title: 'Liming Wang | Zhejiang University | Biomedical Engineering & AI',
+  description: 'Personal website of Liming Wang, an undergraduate student at Zhejiang University interested in AI, medical imaging, and data science.',
+  imageURL: '',
+},
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '', // example: 'pewdiepie'
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
-    discord: '',
-    telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: '',
+    
+    website: '',
+    phone: '+86 19883218782',
+    email: '3230104774@zju.edu.cn',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
-  },
+  fileUrl: '',
+},
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
-  ],
+  'Python',
+  'PyTorch',
+  'Deep Learning',
+  'Machine Learning',
+  'Medical Imaging',
+  'Computer Vision',
+  'Signal Processing',
+  'Data Analysis',
+  'MATLAB',
+  'C++',
+  'Git',
+  'LaTeX',
+],
   experiences: [
     {
       company: 'Company Name',
@@ -118,20 +103,14 @@ const CONFIG = {
       link: 'https://example.com',
     },
   ],
-  educations: [
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
-    },
-  ],
+ educations: [
+  {
+    institution: 'Zhejiang University',
+    degree: 'B.Eng. in Biomedical Engineering, Minor in Artificial Intelligence',
+    from: '2023',
+    to: '2027',
+  },
+],
   publications: [
     {
       title: 'Publication Title',
