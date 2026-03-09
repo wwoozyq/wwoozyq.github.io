@@ -3,6 +3,8 @@ const CONFIG = {
     username: 'wwoozyq',
   },
 
+  // 如果你的仓库名是 wwoozyq.github.io，就保持 '/'
+  // 如果仓库名不是这个，而是别的，比如 gitprofile，就改成 '/gitprofile/'
   base: '/',
 
   projects: {
@@ -29,32 +31,28 @@ const CONFIG = {
           title: 'Deep Learning for Cardiac MRI Analysis',
           description:
             'Research project on cardiac MRI analysis in a medical imaging research group. Built robust preprocessing and normalization pipelines, validated annotation quality, and developed PyTorch-based segmentation models for cardiac structure analysis.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/medical-background-design_23-2148502257.jpg',
+          imageUrl: '/images/MRI.png'
           link: 'https://github.com/wwoozyq',
         },
         {
           title: 'Time-Series Data Science for Wearable Biosensors',
           description:
             'National innovation project on intelligent analysis of high-noise time-series signals from CRISPR-based wearable respiratory virus sensors. Designed Python pipelines for denoising, baseline correction, normalization, and kinetic feature extraction.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/gradient-big-data-illustration_23-2149363592.jpg',
+          imageUrl:'images/传感.png',
           link: 'https://github.com/wwoozyq',
         },
         {
           title: 'Facial Emotion Recognition System',
           description:
             'AI course project for multi-class facial emotion recognition. Built and optimized ResNet50 and VGG16 models with PyTorch, evaluated performance using ROC-AUC and F1-score, and implemented a real-time inference interface for camera and batch image input.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/hand-drawn-flat-design-api-illustration_23-2149383348.jpg',
+          imageUrl:'images/face.png',
           link: 'https://github.com/wwoozyq',
         },
         {
           title: 'Savior of P People',
           description:
             'A collaborative task scheduling and productivity application with intelligent task parsing, OCR-assisted input, and adaptive rescheduling workflows. Displayed here as an engineering-oriented project experience.',
-          imageUrl:
-            'https://opengraph.githubassets.com/1/Valkqs/Savior_of_P_people',
+     imageUrl:'images/agent.png',
           link: 'https://github.com/Valkqs/Savior_of_P_people',
         },
       ],
@@ -64,7 +62,7 @@ const CONFIG = {
   seo: {
     title: 'Liming Wang | Zhejiang University | Biomedical Engineering & AI',
     description:
-      'Personal website of Liming Wang, an undergraduate student at Zhejiang University interested in AI, medical imaging, and data science.',
+      'Personal website of Liming Wang, an undergraduate student at Zhejiang University interested in AI, medical imaging, signal processing, and data science.',
     imageURL: '',
   },
 
@@ -100,6 +98,8 @@ const CONFIG = {
     'PyTorch',
     'Deep Learning',
     'Machine Learning',
+    'Medical Imaging',
+    'Computer Vision',
     'Signal Processing',
     'Data Analysis',
     'MATLAB',
@@ -110,7 +110,26 @@ const CONFIG = {
 
   experiences: [],
 
-  certifications: [],
+  certifications: [
+    {
+      name: 'Meritorious Winner, Mathematical Contest in Modeling',
+      body: 'International mathematical modeling competition',
+      year: '2025',
+      link: '',
+    },
+    {
+      name: 'Second Prize, National Biomedical Engineering Competition',
+      body: 'National undergraduate competition in biomedical engineering',
+      year: '2024',
+      link: '',
+    },
+    {
+      name: 'First Prize, Shuwei Cup National Competition',
+      body: 'National data science and mathematical modeling competition',
+      year: '2024',
+      link: '',
+    },
+  ],
 
   educations: [
     {
@@ -143,14 +162,14 @@ const CONFIG = {
     disableSwitch: false,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
-    themes: ['light', 'dark', 'cupcake'],
+    themes: ['light', 'dark', 'cupcake', 'lofi', 'pastel', 'winter', 'nord'],
   },
 
-  footer: `Made with <a 
+  footer: `Built with <a 
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
       rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+    >GitProfile</a>`,
 
   enablePWA: true,
 };
