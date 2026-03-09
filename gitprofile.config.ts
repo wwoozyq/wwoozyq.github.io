@@ -38,7 +38,7 @@ const CONFIG = {
           title: 'Time-Series Data Science for Wearable Biosensors',
           description:
             'National innovation project on intelligent analysis of high-noise time-series signals from CRISPR-based wearable respiratory virus sensors. Designed Python pipelines for denoising, baseline correction, normalization, and kinetic feature extraction.',
-          imageUrl:'/传感.png',
+          imageUrl:'/tenser.png',
           link: 'https://github.com/wwoozyq',
         },
         {
