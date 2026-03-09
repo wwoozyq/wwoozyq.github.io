@@ -29,28 +29,42 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
-      projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-      ],
+  header: 'Selected Projects',
+  projects: [
+    {
+      title: 'Deep Learning for Cardiac MRI Analysis',
+      description:
+        'Research project on cardiac MRI analysis in a medical imaging research group. Built robust preprocessing and normalization pipelines, validated annotation quality, and developed PyTorch-based segmentation models for cardiac structure analysis.',
+      imageUrl:
+        'https://img.freepik.com/free-vector/medical-background-design_23-2148502257.jpg',
+      link: 'https://github.com/wwoozyq',
     },
-  },
+    {
+      title: 'Time-Series Data Science for Wearable Biosensors',
+      description:
+        'National innovation project on intelligent analysis of high-noise time-series signals from CRISPR-based wearable respiratory virus sensors. Designed Python pipelines for denoising, baseline correction, normalization, and kinetic feature extraction.',
+      imageUrl:
+        'https://img.freepik.com/free-vector/gradient-big-data-illustration_23-2149363592.jpg',
+      link: 'https://github.com/wwoozyq',
+    },
+    {
+      title: 'Facial Emotion Recognition System',
+      description:
+        'AI course project for multi-class facial emotion recognition. Built and optimized ResNet50 and VGG16 models with PyTorch, evaluated performance using ROC-AUC and F1-score, and implemented a real-time inference interface for camera and batch image input.',
+      imageUrl:
+        'https://img.freepik.com/free-vector/hand-drawn-flat-design-api-illustration_23-2149383348.jpg',
+      link: 'https://github.com/wwoozyq',
+    },
+    {
+      title: 'Savior of P People',
+      description:
+        'A collaborative task scheduling and productivity application with intelligent task parsing, OCR-assisted input, and adaptive rescheduling workflows. Displayed here as an engineering-oriented project experience.',
+      imageUrl:
+        'https://opengraph.githubassets.com/1/Valkqs/Savior_of_P_people',
+      link: 'https://github.com/Valkqs/Savior_of_P_people',
+    },
+  ],
+},
   seo: {
   title: 'Liming Wang | Zhejiang University | Biomedical Engineering & AI',
   description: 'Personal website of Liming Wang, an undergraduate student at Zhejiang University interested in AI, medical imaging, and data science.',
@@ -70,38 +84,20 @@ const CONFIG = {
   'PyTorch',
   'Deep Learning',
   'Machine Learning',
-  'Medical Imaging',
-  'Computer Vision',
   'Signal Processing',
   'Data Analysis',
   'MATLAB',
-  'C++',
+  'C',
   'Git',
   'LaTeX',
 ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
+    
+  
   ],
   certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
+ 
   ],
  educations: [
   {
@@ -112,24 +108,7 @@ const CONFIG = {
   },
 ],
   publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
+    
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
@@ -161,39 +140,8 @@ const CONFIG = {
       'light',
       'dark',
       'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'dim',
-      'nord',
-      'sunset',
-      'caramellatte',
-      'abyss',
-      'silk',
-      'procyon',
+   
+ 
     ],
   },
 
