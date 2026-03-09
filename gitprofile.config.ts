@@ -31,28 +31,28 @@ const CONFIG = {
           title: 'Deep Learning for Cardiac MRI Analysis',
           description:
             'Research project on cardiac MRI analysis in a medical imaging research group. Built robust preprocessing and normalization pipelines, validated annotation quality, and developed PyTorch-based segmentation models for cardiac structure analysis.',
-          imageUrl: '/images/MRI.png',
+          imageUrl: '/MRI.png',
           link: 'https://github.com/wwoozyq',
         },
         {
           title: 'Time-Series Data Science for Wearable Biosensors',
           description:
             'National innovation project on intelligent analysis of high-noise time-series signals from CRISPR-based wearable respiratory virus sensors. Designed Python pipelines for denoising, baseline correction, normalization, and kinetic feature extraction.',
-          imageUrl:'images/传感.png',
+          imageUrl:'/传感.png',
           link: 'https://github.com/wwoozyq',
         },
         {
           title: 'Facial Emotion Recognition System',
           description:
             'AI course project for multi-class facial emotion recognition. Built and optimized ResNet50 and VGG16 models with PyTorch, evaluated performance using ROC-AUC and F1-score, and implemented a real-time inference interface for camera and batch image input.',
-          imageUrl:'images/face.png',
+          imageUrl:'/face.png',
           link: 'https://github.com/wwoozyq',
         },
         {
           title: 'Savior of P People',
           description:
             'A collaborative task scheduling and productivity application with intelligent task parsing, OCR-assisted input, and adaptive rescheduling workflows. Displayed here as an engineering-oriented project experience.',
-     imageUrl:'images/agent.png',
+     imageUrl:'/agent.png',
           link: 'https://github.com/Valkqs/Savior_of_P_people',
         },
       ],
