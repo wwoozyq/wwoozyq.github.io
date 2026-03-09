@@ -28,6 +28,13 @@ const CONFIG = {
       header: 'Selected Projects',
       projects: [
         {
+  title: 'Biomedical Data Science Code Agent',
+  description:
+    'A biomedical data science reasoning-and-coding agent based on the ReAct paradigm, supporting multi-agent collaboration for data analysis, predictive modeling, SQL querying, and quality assurance, with a Streamlit-based web interface.',
+  imageUrl: '/bioagent.png',
+  link: 'https://github.com/wwoozyq/biomedical-code-agent',
+},
+        {
           title: 'Deep Learning for Cardiac MRI Analysis',
           description:
             'Research project on cardiac MRI analysis in a medical imaging research group. Built robust preprocessing and normalization pipelines, validated annotation quality, and developed PyTorch-based segmentation models for cardiac structure analysis.',
@@ -55,13 +62,7 @@ const CONFIG = {
      imageUrl:'/agent.png',
           link: 'https://github.com/wwoozyq/Savior_of_P_people',
         },
-        {
-  title: 'Biomedical Data Science Code Agent',
-  description:
-    'A biomedical data science reasoning-and-coding agent based on the ReAct paradigm, supporting multi-agent collaboration for data analysis, predictive modeling, SQL querying, and quality assurance, with a Streamlit-based web interface.',
-  imageUrl: '/bioagent.png',
-  link: 'https://github.com/wwoozyq/biomedical-code-agent',
-},
+        
       ],
     },
   },
