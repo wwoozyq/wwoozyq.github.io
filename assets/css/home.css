@@ -875,3 +875,43 @@
                 height: 72px;
             }
         }
+
+        /* Avatar-inspired accent: soft coral pink instead of academic blue. */
+        :root {
+            --avatar-accent: #d66b7d;
+            --avatar-accent-dark: #b94f65;
+        }
+
+        .news-date,
+        .experience-info a,
+        div.markdown-body a,
+        .venue-label,
+        a {
+            color: var(--avatar-accent);
+        }
+
+        div.markdown-body a:hover,
+        a:hover {
+            color: var(--avatar-accent-dark);
+        }
+
+        .main-heading,
+        h1, h2, h3, h4, strong {
+            color: #20242b;
+        }
+
+        .pub-button.active {
+            background-color: var(--avatar-accent);
+            border-color: var(--avatar-accent);
+        }
+
+        .research-interests span {
+            border-color: rgba(214, 107, 125, 0.48);
+            color: var(--avatar-accent);
+        }
+
+        .sidebar .author__urls i,
+        .sidebar .contact-popover__actions button,
+        .sidebar .contact-popover__actions a {
+            color: var(--avatar-accent) !important;
+        }
