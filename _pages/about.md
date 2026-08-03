@@ -16,17 +16,6 @@ My research interests include **agent memory, self-improving agents, web search 
 
 Feel free to [get in touch](mailto:3230104774@zju.edu.cn) if you would like to discuss research or collaboration.
 
-News
----------------
-<div class="news-box">
-  <ul class="news-list">
-    <li><span class="news-date"><em>2025</em></span> Built a biomedical data science reasoning-and-coding agent with a Streamlit interface.</li>
-    <li><span class="news-date"><em>2024</em></span> Received First Prize in the Shuwei Cup National Competition.</li>
-    <li><span class="news-date"><em>2024</em></span> Received Second Prize in the National Biomedical Engineering Competition.</li>
-    <li><span class="news-date"><em>2023</em></span> Started undergraduate study at Zhejiang University.</li>
-  </ul>
-</div>
-
 Education
 --------------
 <div class="experience-container" id="education">
