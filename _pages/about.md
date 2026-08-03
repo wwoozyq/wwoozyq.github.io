@@ -51,6 +51,19 @@ Research Interests
   <span>AI Agents</span>
 </div>
 
+Experience
+--------------
+<div class="experience-container" id="experience">
+  <div class="experience-card">
+    <div class="experience-logo experience-logo--placeholder">QWEN</div>
+    <div class="experience-info">
+      <strong>Alibaba Qwen · Medical Foundation Model</strong><br>
+      <em>Evaluation Algorithm Intern</em><br>
+      Worked on evaluation algorithms and benchmarking for medical foundation models.
+    </div>
+  </div>
+</div>
+
 Honors and Awards
 --------------
 <ul id="awards">
