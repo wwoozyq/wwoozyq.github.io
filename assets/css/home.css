@@ -726,3 +726,43 @@
             border-color: #e8e8e8;
             background: #ffffff;
         }
+
+        /* Keep education and internship entries compact like a CV timeline. */
+        .experience-container {
+            gap: 12px;
+        }
+
+        .experience-container#education .experience-card,
+        .experience-container#internship .experience-card {
+            min-height: 76px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-right: 150px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(30, 41, 59, 0.05);
+        }
+
+        .experience-container#education .experience-card::after,
+        .experience-container#internship .experience-card::after {
+            right: 16px;
+            width: 120px;
+            height: 120px;
+        }
+
+        .experience-info strong {
+            font-size: 1.02em;
+        }
+
+        @media (max-width: 600px) {
+            .experience-container#education .experience-card,
+            .experience-container#internship .experience-card {
+                padding-right: 86px;
+            }
+
+            .experience-container#education .experience-card::after,
+            .experience-container#internship .experience-card::after {
+                right: 10px;
+                width: 72px;
+                height: 72px;
+            }
+        }
