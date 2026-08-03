@@ -90,7 +90,7 @@
         <li><a href="https://dribbble.com/{{ author.dribbble }}"><i class="fab fa-fw fa-dribbble icon-pad-right" aria-hidden="true"></i>Dribbble</a></li>
       {% endif %}      
       {% if author.github %}
-        <li class="contact-item"><a href="https://github.com/{{ author.github }}" class="contact-trigger" data-contact-value="https://github.com/{{ author.github }}" data-contact-type="link"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>Github</a>
+        <li class="contact-item contact-item--link"><a href="https://github.com/{{ author.github }}" class="contact-trigger" data-contact-value="https://github.com/{{ author.github }}" data-contact-type="link"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>Github</a>
           <div class="contact-popover" role="dialog" aria-label="GitHub actions" hidden>
             <div class="contact-popover__value">https://github.com/{{ author.github }}</div>
             <div class="contact-popover__actions"><button type="button" data-copy-contact><i class="fas fa-copy" aria-hidden="true"></i> Copy</button><a href="https://github.com/{{ author.github }}" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Open</a></div>

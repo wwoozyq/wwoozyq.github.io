@@ -833,6 +833,13 @@
         .sidebar .contact-popover__value {
             font-size: 0.76rem;
             line-height: 1.25;
+            white-space: normal;
+            overflow-wrap: anywhere;
+        }
+
+        .sidebar .contact-item--link .contact-popover {
+            width: 300px !important;
+            max-width: min(300px, calc(100vw - 48px)) !important;
         }
 
         .sidebar .contact-popover__actions {
