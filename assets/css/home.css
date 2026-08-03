@@ -818,6 +818,9 @@
             box-sizing: border-box;
             width: 180px !important;
             max-width: 180px !important;
+            left: 0 !important;
+            right: auto !important;
+            overflow: visible;
             padding: 8px 10px 7px;
             border-radius: 10px;
             bottom: calc(100% + 6px);
@@ -835,13 +838,16 @@
         .sidebar .contact-popover__actions {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 8px;
+            white-space: nowrap;
             margin-top: 5px;
             padding-top: 5px;
         }
 
         .sidebar .contact-popover__actions button,
         .sidebar .contact-popover__actions a {
+            display: inline-flex !important;
+            align-items: center;
             font-size: 0.74rem;
         }
 
