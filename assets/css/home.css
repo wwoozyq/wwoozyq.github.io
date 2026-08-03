@@ -375,6 +375,28 @@
         body {
             background-color: #f8fafc;
             color: #111827;
+            position: relative;
+        }
+
+        /* A quiet ZJU watermark gives the page a stronger academic identity. */
+        body::before {
+            content: "";
+            position: fixed;
+            z-index: 0;
+            top: 8rem;
+            right: 3vw;
+            width: min(34vw, 420px);
+            height: min(34vw, 420px);
+            background: url("/images/zju.png") center / contain no-repeat;
+            opacity: 0.045;
+            pointer-events: none;
+        }
+
+        .main-heading {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #003366;
+            letter-spacing: -0.02em;
         }
 
         .news-box { background: #f1f5f9; }
@@ -416,7 +438,54 @@
             letter-spacing: 0.08em;
         }
 
+        .experience-card:first-child {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .experience-card:first-child::after {
+            content: "";
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            width: 84px;
+            height: 84px;
+            transform: translateY(-50%);
+            background: url("/images/zju.png") center / contain no-repeat;
+            opacity: 0.12;
+            pointer-events: none;
+        }
+
+        .research-interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 18px 0 28px;
+        }
+
+        .research-interests span {
+            padding: 7px 12px;
+            border: 1px solid rgba(0, 86, 179, 0.45);
+            border-radius: 999px;
+            color: #0056b3;
+            background: rgba(255, 255, 255, 0.78);
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            body::before {
+                top: 5rem;
+                right: -8rem;
+                width: 18rem;
+                height: 18rem;
+            }
+
+            .experience-card:first-child::after {
+                right: 10px;
+                width: 60px;
+                height: 60px;
+            }
+        }
+
         .venue-label { color: #0056b3; }
-
-
 
