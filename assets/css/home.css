@@ -663,3 +663,66 @@
         }
 
         .venue-label { color: #0056b3; }
+
+        /* Selen-style palette: white canvas, neutral cards, restrained blue links. */
+        body {
+            background-color: #ffffff;
+            color: #2f3540;
+        }
+
+        body::before {
+            opacity: 0.028;
+        }
+
+        .main-heading,
+        h1, h2, h3, h4, strong {
+            color: #20242b;
+        }
+
+        .news-box {
+            background: #fafafa;
+            border: 1px solid #eeeeee;
+        }
+
+        .experience-card,
+        .publication-card,
+        .project-card {
+            background: #ffffff;
+            border: 1px solid #e8e8e8;
+            box-shadow: 0 5px 18px rgba(30, 41, 59, 0.06);
+        }
+
+        .experience-card:hover,
+        .publication-card:hover,
+        .project-card:hover {
+            box-shadow: 0 8px 24px rgba(30, 41, 59, 0.09);
+        }
+
+        .news-date,
+        .experience-info a,
+        .main-heading,
+        div.markdown-body a,
+        a {
+            color: #1769aa;
+        }
+
+        div.markdown-body a:hover,
+        a:hover {
+            color: #0b4f82;
+        }
+
+        .author__avatar::before {
+            border-color: #e5e7eb;
+            color: #4b5563;
+            background: #ffffff;
+        }
+
+        .contact-popover {
+            border-color: #e8e8e8;
+            box-shadow: 0 14px 28px rgba(30, 41, 59, 0.14);
+        }
+
+        .contact-popover::after {
+            border-color: #e8e8e8;
+            background: #ffffff;
+        }
