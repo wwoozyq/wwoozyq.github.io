@@ -37,7 +37,12 @@
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+        <li class="contact-item"><a href="mailto:{{ author.email }}" class="contact-trigger" data-contact-value="{{ author.email }}" data-contact-type="email"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a>
+          <div class="contact-popover" role="dialog" aria-label="Email actions" hidden>
+            <div class="contact-popover__value">{{ author.email }}</div>
+            <div class="contact-popover__actions"><button type="button" data-copy-contact>Copy</button><a href="mailto:{{ author.email }}">Open</a></div>
+          </div>
+        </li>
       {% endif %}
       {% if author.WeChat %}
         <li class="author__wechat"><a href="{{ author.WeChat }}"><i class="fab fa-fw fa-weixin icon-pad-right" aria-hidden="true"></i>WeChat</a></li>
@@ -77,7 +82,12 @@
         <li><a href="https://dribbble.com/{{ author.dribbble }}"><i class="fab fa-fw fa-dribbble icon-pad-right" aria-hidden="true"></i>Dribbble</a></li>
       {% endif %}      
       {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>Github</a></li>
+        <li class="contact-item"><a href="https://github.com/{{ author.github }}" class="contact-trigger" data-contact-value="https://github.com/{{ author.github }}" data-contact-type="link"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>Github</a>
+          <div class="contact-popover" role="dialog" aria-label="GitHub actions" hidden>
+            <div class="contact-popover__value">https://github.com/{{ author.github }}</div>
+            <div class="contact-popover__actions"><button type="button" data-copy-contact>Copy</button><a href="https://github.com/{{ author.github }}" target="_blank" rel="noopener">Open</a></div>
+          </div>
+        </li>
       {% endif %}
       {% if author.kaggle %}
         <li><a href="https://kaggle.com/{{ author.kaggle }}"><i class="fab fa-fw fa-kaggle icon-pad-right" aria-hidden="true"></i>Kaggle</a></li>

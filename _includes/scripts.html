@@ -7,6 +7,12 @@
     });
   }
 
+  function closeContactPopovers() {
+    document.querySelectorAll('.contact-popover').forEach(function(popover) {
+      popover.hidden = true;
+    });
+  }
+
   function init() {
     document.querySelectorAll('.author__urls-wrapper').forEach(function(wrapper) {
       var button = wrapper.querySelector('button');
@@ -18,10 +24,33 @@
         event.stopPropagation();
         wrapper.classList.toggle('is-open');
       });
+
+      wrapper.querySelectorAll('.contact-trigger').forEach(function(trigger) {
+        trigger.addEventListener('click', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          var popover = trigger.parentElement.querySelector('.contact-popover');
+          var wasHidden = popover.hidden;
+          closeContactPopovers();
+          popover.hidden = !wasHidden;
+        });
+      });
+
+      wrapper.querySelectorAll('[data-copy-contact]').forEach(function(copyButton) {
+        copyButton.addEventListener('click', function(event) {
+          event.preventDefault();
+          var value = copyButton.closest('.contact-popover').querySelector('.contact-popover__value').textContent.trim();
+          navigator.clipboard.writeText(value).then(function() {
+            copyButton.textContent = 'Copied';
+            window.setTimeout(function() { copyButton.textContent = 'Copy'; }, 1200);
+          });
+        });
+      });
     });
 
     document.addEventListener('click', function() {
       closeAll();
+      closeContactPopovers();
     });
 
     document.addEventListener('keydown', function(event) {

@@ -478,6 +478,71 @@
             pointer-events: none;
         }
 
+        .experience-container#internship .experience-card {
+            position: relative;
+            overflow: hidden;
+            padding-right: 220px;
+        }
+
+        .experience-container#internship .experience-logo--brand {
+            display: none;
+        }
+
+        .experience-container#internship .experience-card::after {
+            content: "";
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            width: 180px;
+            height: 180px;
+            transform: translateY(-50%);
+            background: url("/images/alibaba.png") center / contain no-repeat;
+            opacity: 0.16;
+            pointer-events: none;
+        }
+
+        .contact-item {
+            position: relative;
+        }
+
+        .contact-popover {
+            position: absolute;
+            z-index: 20;
+            left: 0;
+            top: calc(100% + 8px);
+            width: 270px;
+            padding: 14px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            background: #ffffff;
+            box-shadow: 0 14px 30px rgba(15, 35, 60, 0.18);
+        }
+
+        .contact-popover__value {
+            overflow-wrap: anywhere;
+            color: #334155;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .contact-popover__actions {
+            display: flex;
+            gap: 16px;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .contact-popover__actions button,
+        .contact-popover__actions a {
+            padding: 0;
+            border: 0;
+            background: none;
+            color: #0056b3;
+            font: inherit;
+            cursor: pointer;
+        }
+
         .research-interests {
             display: flex;
             flex-wrap: wrap;
@@ -507,6 +572,16 @@
             }
 
             .experience-container#education .experience-card::after {
+                right: 10px;
+                width: 84px;
+                height: 84px;
+            }
+
+            .experience-container#internship .experience-card {
+                padding-right: 100px;
+            }
+
+            .experience-container#internship .experience-card::after {
                 right: 10px;
                 width: 84px;
                 height: 84px;
