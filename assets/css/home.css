@@ -797,6 +797,45 @@
             font-size: 1.02em;
         }
 
+        /* Match the reference sidebar: one calm vertical contact list. */
+        .sidebar .author__urls.social-icons {
+            display: block;
+            margin-top: 14px;
+        }
+
+        .sidebar .author__urls.social-icons > li,
+        .sidebar .author__urls.social-icons > li.author__desktop {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .sidebar .author__urls.social-icons > li:last-child {
+            margin-bottom: 0;
+        }
+
+        .sidebar .contact-popover {
+            width: 240px;
+            padding: 11px 13px 10px;
+            border-radius: 12px;
+            bottom: calc(100% + 8px);
+        }
+
+        .sidebar .contact-popover__value {
+            font-size: 0.88rem;
+        }
+
+        .sidebar .contact-popover__actions {
+            gap: 12px;
+            margin-top: 7px;
+            padding-top: 7px;
+        }
+
+        .sidebar .contact-popover__actions button,
+        .sidebar .contact-popover__actions a {
+            font-size: 0.84rem;
+        }
+
         @media (max-width: 600px) {
             .experience-container#education .experience-card,
             .experience-container#internship .experience-card {

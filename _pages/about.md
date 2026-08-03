@@ -2,7 +2,7 @@
 permalink: /
 author_profile: true
 stylesheets:
-  - /assets/css/home.css?v=popover-compact
+  - /assets/css/home.css?v=selen-sidebar
 redirect_from:
   - /about/
   - /about.html
