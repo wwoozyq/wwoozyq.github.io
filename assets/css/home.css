@@ -815,10 +815,16 @@
         }
 
         .sidebar .contact-popover {
-            width: 240px;
-            padding: 11px 13px 10px;
+            box-sizing: border-box;
+            width: 220px !important;
+            max-width: calc(100vw - 64px);
+            padding: 10px 12px 9px;
             border-radius: 12px;
             bottom: calc(100% + 8px);
+        }
+
+        .sidebar .author__urls i {
+            color: #0056b3 !important;
         }
 
         .sidebar .contact-popover__value {
@@ -826,6 +832,8 @@
         }
 
         .sidebar .contact-popover__actions {
+            display: flex;
+            align-items: center;
             gap: 12px;
             margin-top: 7px;
             padding-top: 7px;
