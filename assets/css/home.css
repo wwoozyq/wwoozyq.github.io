@@ -816,8 +816,9 @@
 
         .sidebar .contact-popover {
             box-sizing: border-box;
-            width: 180px !important;
-            max-width: 180px !important;
+            width: max-content !important;
+            min-width: 180px;
+            max-width: calc(100vw - 48px) !important;
             left: 0 !important;
             right: auto !important;
             overflow: visible;
@@ -838,7 +839,6 @@
         }
 
         .sidebar .contact-item--link .contact-popover {
-            width: 300px !important;
             max-width: min(300px, calc(100vw - 48px)) !important;
         }
 
