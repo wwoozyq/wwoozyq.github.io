@@ -40,7 +40,15 @@
         <li class="contact-item"><a href="mailto:{{ author.email }}" class="contact-trigger" data-contact-value="{{ author.email }}" data-contact-type="email"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a>
           <div class="contact-popover" role="dialog" aria-label="Email actions" hidden>
             <div class="contact-popover__value">{{ author.email }}</div>
-            <div class="contact-popover__actions"><button type="button" data-copy-contact>Copy</button><a href="mailto:{{ author.email }}">Open</a></div>
+            <div class="contact-popover__actions"><button type="button" data-copy-contact><i class="fas fa-copy" aria-hidden="true"></i> Copy</button><a href="mailto:{{ author.email }}"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Open</a></div>
+          </div>
+        </li>
+      {% endif %}
+      {% if author.phone %}
+        <li class="contact-item"><a href="tel:{{ author.phone | replace: ' ', '' }}" class="contact-trigger" data-contact-value="{{ author.phone }}" data-contact-type="phone"><i class="fas fa-fw fa-phone icon-pad-right" aria-hidden="true"></i>Phone</a>
+          <div class="contact-popover" role="dialog" aria-label="Phone actions" hidden>
+            <div class="contact-popover__value">{{ author.phone }}</div>
+            <div class="contact-popover__actions"><button type="button" data-copy-contact><i class="fas fa-copy" aria-hidden="true"></i> Copy</button><a href="tel:{{ author.phone | replace: ' ', '' }}"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Open</a></div>
           </div>
         </li>
       {% endif %}
@@ -85,7 +93,7 @@
         <li class="contact-item"><a href="https://github.com/{{ author.github }}" class="contact-trigger" data-contact-value="https://github.com/{{ author.github }}" data-contact-type="link"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>Github</a>
           <div class="contact-popover" role="dialog" aria-label="GitHub actions" hidden>
             <div class="contact-popover__value">https://github.com/{{ author.github }}</div>
-            <div class="contact-popover__actions"><button type="button" data-copy-contact>Copy</button><a href="https://github.com/{{ author.github }}" target="_blank" rel="noopener">Open</a></div>
+            <div class="contact-popover__actions"><button type="button" data-copy-contact><i class="fas fa-copy" aria-hidden="true"></i> Copy</button><a href="https://github.com/{{ author.github }}" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Open</a></div>
           </div>
         </li>
       {% endif %}
