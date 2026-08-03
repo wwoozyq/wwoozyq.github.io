@@ -12,7 +12,7 @@ redirect_from:
 
 I am an undergraduate student at **Zhejiang University**. My work focuses on large language models and intelligent agents, with a background in Biomedical Engineering and a minor in Artificial Intelligence.
 
-My research interests include **multimodal LLMs, multimodal reasoning, agent memory, self-improving agents, web search agents, and LLM post-training**. I enjoy studying how models can reason over diverse inputs, use tools, retain useful experience, and improve through evaluation and interaction.
+My research interests include **agent memory, self-improving agents, web search agents, and LLM post-training**. I enjoy studying how models can use tools, retain useful experience, and improve through evaluation and interaction. I am also exploring **multimodal LLMs and multimodal reasoning**.
 
 Feel free to [get in touch](mailto:3230104774@zju.edu.cn) if you would like to discuss research or collaboration.
 
@@ -43,12 +43,12 @@ Education
 Research Interests
 --------------
 <div id="research" class="research-interests">
-  <span>Multimodal LLM</span>
-  <span>Multimodal Reasoning</span>
   <span>Agent Memory</span>
   <span>Self-Improving Agents</span>
   <span>Web Search Agents</span>
   <span>LLM Post-Training</span>
+  <span>Multimodal LLM</span>
+  <span>Multimodal Reasoning</span>
 </div>
 
 Internship Experience
