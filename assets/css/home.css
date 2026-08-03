@@ -727,6 +727,20 @@
             background: #ffffff;
         }
 
+        /* Final canvas treatment: no large watermark and no gray page wash. */
+        html,
+        body,
+        #main,
+        .page,
+        .page__inner-wrap,
+        .page__content {
+            background: #ffffff !important;
+        }
+
+        body::before {
+            display: none !important;
+        }
+
         /* Compact, card-free personal profile block. */
         .sidebar .author__avatar::before {
             width: 104px;
