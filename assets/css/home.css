@@ -885,10 +885,10 @@
             }
         }
 
-        /* Avatar-inspired accent: soft coral pink instead of academic blue. */
+        /* Avatar-inspired accent: clear sky blue with a deeper navy hover state. */
         :root {
-            --avatar-accent: #d66b7d;
-            --avatar-accent-dark: #b94f65;
+            --avatar-accent: #4b83c4;
+            --avatar-accent-dark: #2f6098;
         }
 
         .news-date,
@@ -915,7 +915,7 @@
         }
 
         .research-interests span {
-            border-color: rgba(214, 107, 125, 0.48);
+            border-color: rgba(75, 131, 196, 0.48);
             color: var(--avatar-accent);
         }
 
