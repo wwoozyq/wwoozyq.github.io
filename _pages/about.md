@@ -2,7 +2,7 @@
 permalink: /
 author_profile: true
 stylesheets:
-  - /assets/css/home.css?v=sidebar-no-bio
+  - /assets/css/home.css?v=avatar-favicon
 redirect_from:
   - /about/
   - /about.html
