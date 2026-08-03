@@ -816,11 +816,11 @@
 
         .sidebar .contact-popover {
             box-sizing: border-box;
-            width: 220px !important;
-            max-width: calc(100vw - 64px);
-            padding: 10px 12px 9px;
-            border-radius: 12px;
-            bottom: calc(100% + 8px);
+            width: 180px !important;
+            max-width: 180px !important;
+            padding: 8px 10px 7px;
+            border-radius: 10px;
+            bottom: calc(100% + 6px);
         }
 
         .sidebar .author__urls i {
@@ -828,20 +828,21 @@
         }
 
         .sidebar .contact-popover__value {
-            font-size: 0.88rem;
+            font-size: 0.76rem;
+            line-height: 1.25;
         }
 
         .sidebar .contact-popover__actions {
             display: flex;
             align-items: center;
             gap: 12px;
-            margin-top: 7px;
-            padding-top: 7px;
+            margin-top: 5px;
+            padding-top: 5px;
         }
 
         .sidebar .contact-popover__actions button,
         .sidebar .contact-popover__actions a {
-            font-size: 0.84rem;
+            font-size: 0.74rem;
         }
 
         @media (max-width: 600px) {
