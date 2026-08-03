@@ -8,7 +8,7 @@ baseurl                  : ""
 repository               : "wwoozyq/wwoozyq.github.io"
 
 author:
-  avatar           : "favicon.ico"
+  avatar           :
   name             : "Liming Wang"
   pronouns         :
   bio              : "Undergraduate student in Biomedical Engineering · Minor in Artificial Intelligence"

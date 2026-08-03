@@ -496,8 +496,8 @@
             width: 180px;
             height: 180px;
             transform: translateY(-50%);
-            background: url("/images/alibaba.png") center / contain no-repeat;
-            opacity: 0.24;
+            background: url("/images/alibaba-wordmark.png") center / contain no-repeat;
+            opacity: 0.16;
             pointer-events: none;
         }
 
@@ -506,10 +506,42 @@
         }
 
         .author__urls.social-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 0;
+        }
+
+        .author__urls.social-icons > li {
+            flex: 0 0 50%;
+            min-width: 0;
+        }
+
+        .author__urls.social-icons > li.author__desktop {
+            flex-basis: 100%;
+        }
+
+        .author__avatar {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            column-gap: 18px;
-            row-gap: 8px;
+            place-items: center;
+        }
+
+        .author__avatar img[src$="/images/"] {
+            display: none;
+        }
+
+        .author__avatar::before {
+            content: "LW";
+            display: grid;
+            place-items: center;
+            width: 132px;
+            height: 132px;
+            border: 4px solid rgba(0, 86, 179, 0.18);
+            border-radius: 50%;
+            background: #ffffff;
+            color: #0056b3;
+            font-size: 2.3rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
         }
 
         .contact-popover {
@@ -611,6 +643,12 @@
                 right: 10px;
                 width: 84px;
                 height: 84px;
+            }
+
+            .author__avatar::before {
+                width: 108px;
+                height: 108px;
+                font-size: 1.9rem;
             }
 
             .contact-popover {
