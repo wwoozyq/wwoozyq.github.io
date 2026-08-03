@@ -683,6 +683,10 @@
             color: #20242b;
         }
 
+        .page__content p strong {
+            color: var(--avatar-accent);
+        }
+
         .news-box {
             background: #fafafa;
             border: 1px solid #eeeeee;
