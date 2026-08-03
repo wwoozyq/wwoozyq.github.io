@@ -757,6 +757,11 @@
             font-size: 1.85rem;
         }
 
+        .sidebar .author__avatar img {
+            max-width: 140px;
+            padding: 4px;
+        }
+
         .sidebar .author__content {
             padding-top: 0;
         }
