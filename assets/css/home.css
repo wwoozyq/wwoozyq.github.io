@@ -727,6 +727,36 @@
             background: #ffffff;
         }
 
+        /* Compact, card-free personal profile block. */
+        .sidebar .author__avatar::before {
+            width: 104px;
+            height: 104px;
+            border-width: 3px;
+            font-size: 1.85rem;
+        }
+
+        .sidebar .author__content {
+            padding-top: 0;
+        }
+
+        .sidebar .author__name {
+            margin-top: 8px;
+            margin-bottom: 6px;
+            font-size: 1.15rem;
+        }
+
+        .sidebar .author__bio {
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: #5f6368;
+            font-size: 0.88rem;
+            line-height: 1.45;
+        }
+
+        .sidebar .author__urls.social-icons {
+            margin-top: 4px;
+        }
+
         /* Keep education and internship entries compact like a CV timeline. */
         .experience-container {
             gap: 12px;
