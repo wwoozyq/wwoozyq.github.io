@@ -1,100 +1,209 @@
-# vinext-starter
+﻿# WowPage
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+WowPage is a clean, responsive academic homepage built with Jekyll and adapted from the Academic Pages theme. It is designed for students, researchers, and engineers who want a personal website for introducing their profile, publications, projects, experience, awards, talks, services, and CV.
 
-## Prerequisites
+Template is originated from [selen-suyue.github.io](https://selen-suyue.github.io/).
+Example：[wd7ang.github.io](https://wd7ang.github.io).
+## Features
 
-- Node.js `>=22.13.0`
+- Academic-style homepage with author profile sidebar
+- Single-page navigation for news, experience, publications, projects, awards, services, and talks
+- Custom homepage styling through `assets/css/home.css`
+- Publication filtering on the homepage
+- CV link support through the navigation menu
+- Social profile fields managed from `_config.yml`
+- GitHub Pages compatible Jekyll setup
+- Sitemap and feed support through Jekyll plugins
 
-## Quick Start
+## Project Structure
+
+```text
+.
+├── _config.yml              # Main site configuration and author metadata
+├── _data/
+│   ├── navigation.yml       # Header navigation links
+│   ├── authors.yml          # Optional author data
+│   └── ui-text.yml          # Theme UI text
+├── _includes/               # Reusable Liquid partials
+├── _layouts/                # Page layout templates
+├── _pages/                  # Main site pages, including the homepage
+├── _sass/                   # Theme Sass source files
+├── assets/                  # CSS, JavaScript, and theme assets
+├── images/                  # Profile, logos, publication images, and other media
+├── markdown_generator/      # Helper scripts/templates for generating markdown content
+├── talkmap/                 # Talk map page assets
+├── Gemfile                  # Ruby/Jekyll dependencies
+├── package.json             # JavaScript build dependencies and scripts
+└── LICENSE
+```
+
+## Getting Started
+
+### Prerequisites
+
+Install the following tools before running the site locally:
+
+- Ruby and Bundler
+- Node.js and npm
+- Git
+
+### Installation
+
+Clone the repository and install dependencies:
 
 ```bash
+git clone <your-repository-url>
+cd WowPage
+bundle install
 npm install
-npm run dev
-npm run build
 ```
 
-This starter does not use `wrangler.jsonc`.
+### Run Locally
 
-## Included Shape
+Start the Jekyll development server:
 
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-Signed-in visitors receive both `oai-authenticated-user-id` and `oai-authenticated-user-email`. Private Sites require every visitor to sign in; public Sites may also have anonymous visitors, for whom neither header is present.
-
-The user ID is stable for the same user on the same Site and different across Sites. Email and name are intended for display or contact purposes.
-
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const userId = requestHeaders.get("oai-authenticated-user-id");
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
+```bash
+bundle exec jekyll serve
 ```
 
-## Optional Dispatch-Owned ChatGPT Sign-In
+Then open the local URL shown in the terminal, usually:
 
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-optional or required ChatGPT sign-in:
+```text
+http://127.0.0.1:4000/
+```
 
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
-  anonymous visitors through Sign in with ChatGPT.
-- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
-  browser links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in
-  or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because
-  they depend on per-request identity headers.
+### Build the Site
 
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
-those reserved paths. Routes that do not import and call the helper remain
-anonymous-compatible.
+Generate the static site:
 
-SIWC establishes identity only; it does not prove workspace membership. Use the
-Sites hosting platform's access policy controls for workspace-wide restrictions,
-or enforce explicit server-side membership or allowlist checks.
+```bash
+bundle exec jekyll build
+```
 
-Use SIWC for account pages, user-specific dashboards, saved records, and write
-actions tied to the current ChatGPT user. Leave public content anonymous.
+The generated files will be written to `_site/`.
 
-## Useful Commands
+## Customization
 
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
+### Basic Site Information
 
-## Learn More
+Edit `_config.yml` to update the site title, description, URL, author name, biography, affiliation, location, email, avatar, and social links.
 
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+Important fields include:
+
+```yaml
+title: "WowPage"
+name: "Your Name"
+description: "A clean academic homepage template."
+author:
+  avatar: "1.png"
+  name: "Your Name"
+  bio: "Student and researcher."
+  location: "City, Country"
+  employer: "Institution or Company"
+  email: "name@example.com"
+```
+
+### Homepage Content
+
+The homepage content is mainly maintained in:
+
+```text
+_pages/about.md
+```
+
+Update this file to edit sections such as news, experience, publications, projects, awards, services, talks, and the introductory text.
+
+### Navigation
+
+Edit the navigation menu in:
+
+```text
+_data/navigation.yml
+```
+
+For example:
+
+```yaml
+main:
+  - title: "News"
+    url: "/#news"
+  - title: "Experience"
+    url: "/#experience"
+  - title: "Pub"
+    url: "/#publications"
+  - title: "CV-En"
+    url: "/files/weidongtang_resume.pdf"
+```
+
+### Images and Media
+
+Place profile photos, organization logos, project images, publication thumbnails, and other visual assets in:
+
+```text
+images/
+```
+
+Reference them from pages using paths such as:
+
+```html
+<img src="images/example.png" alt="Example image">
+```
+
+### JavaScript and CSS
+
+Custom homepage styles can be edited in:
+
+```text
+assets/css/home.css
+```
+
+JavaScript assets are built with npm:
+
+```bash
+npm run build:js
+```
+
+## Deployment
+
+This site is compatible with GitHub Pages.
+
+A typical deployment workflow is:
+
+1. Push the repository to GitHub.
+2. Open the repository settings on GitHub.
+3. Enable GitHub Pages.
+4. Select the branch and folder used for deployment.
+5. Update `url`, `baseurl`, and `repository` in `_config.yml` if needed.
+
+For a user or organization site, the repository is commonly named:
+
+```text
+<username>.github.io
+```
+
+For a project site, set `baseurl` to the repository name:
+
+```yaml
+url: "https://<username>.github.io"
+baseurl: "/<repository-name>"
+```
+
+## Content Checklist
+
+Before publishing, consider updating:
+
+- Author name, bio, institution, location, and email in `_config.yml`
+- Avatar and profile images in `images/`
+- Navigation links in `_data/navigation.yml`
+- Homepage sections in `_pages/about.md`
+- CV file and CV link
+- Publication metadata, project descriptions, and external links
+- Analytics or site verification settings, if needed
+
+## License
+
+This project is released under the MIT License. See `LICENSE` for details.
+
+## Acknowledgements
+
+We appreciate your use of this template and look forward to your contributions. Contributors are welcome to voluntarily submit homepages built with this template for inclusion in our showcase.
