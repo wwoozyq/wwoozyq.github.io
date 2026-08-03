@@ -373,7 +373,7 @@
 
         /* Personal palette: cool white, academic blue, navy, and gold. */
         body {
-            background-color: #f8fafc;
+            background-color: #eef2f7;
             color: #111827;
             position: relative;
         }
@@ -411,7 +411,11 @@
 
         .experience-card,
         .publication-card,
-        .project-card { background: #ffffff; border-color: #e2e8f0; }
+        .project-card {
+            background: #ffffff;
+            border-color: #d7e0ea;
+            box-shadow: 0 10px 24px rgba(15, 35, 60, 0.10);
+        }
 
         .pub-button.active { background-color: #0056b3; border-color: #0056b3; }
         .publication-card.featured { border-color: #fdb813; background: #fffaf0; }

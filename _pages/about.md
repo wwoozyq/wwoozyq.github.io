@@ -58,7 +58,7 @@ Internship Experience
     <div class="experience-logo experience-logo--brand"><img src="images/alibaba.png" alt="Alibaba Group"></div>
     <div class="experience-info">
       <strong>Alibaba Group – Qwen Medical Foundation Model Team</strong><br>
-      <em>LLM Evaluation Algorithm Intern · Hangzhou, China · Apr. 2026 – Present</em>
+      <em>LLM Evaluation Algorithm Intern · Hangzhou, China · May 2026 – Aug. 2026</em>
     </div>
   </div>
 </div>
