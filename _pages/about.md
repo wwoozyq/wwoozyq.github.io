@@ -10,11 +10,11 @@ redirect_from:
 
 <h1 class="main-heading">Hi, I&apos;m Liming Wang</h1>
 
-I am an undergraduate student at **Zhejiang University**, pursuing a **B.Eng. in Biomedical Engineering** with a minor in **Artificial Intelligence**.
+I am an undergraduate student at **Zhejiang University**. My work focuses on large language models and intelligent agents, with a background in Biomedical Engineering and a minor in Artificial Intelligence.
 
-My interests sit at the intersection of **medical imaging, computer vision, signal processing, and biomedical data science**. I enjoy building reliable data and machine-learning pipelines for real biomedical problems, from cardiac MRI analysis to noisy wearable biosensor signals.
+My research interests include **multimodal LLMs, multimodal reasoning, agent memory, self-improving agents, web search agents, and LLM post-training**. I enjoy studying how models can reason over diverse inputs, use tools, retain useful experience, and improve through evaluation and interaction.
 
-I am also interested in AI-assisted data science and reasoning-and-coding agents. Feel free to [get in touch](mailto:3230104774@zju.edu.cn) if you would like to discuss research or collaboration.
+Feel free to [get in touch](mailto:3230104774@zju.edu.cn) if you would like to discuss research or collaboration.
 
 News
 ---------------
@@ -43,12 +43,12 @@ Education
 Research Interests
 --------------
 <div id="research" class="research-interests">
-  <span>Medical Imaging</span>
-  <span>Cardiac MRI</span>
-  <span>Computer Vision</span>
-  <span>Signal Processing</span>
-  <span>Biomedical Data Science</span>
-  <span>AI Agents</span>
+  <span>Multimodal LLM</span>
+  <span>Multimodal Reasoning</span>
+  <span>Agent Memory</span>
+  <span>Self-Improving Agents</span>
+  <span>Web Search Agents</span>
+  <span>LLM Post-Training</span>
 </div>
 
 Internship Experience
