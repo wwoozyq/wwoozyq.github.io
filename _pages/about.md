@@ -57,9 +57,13 @@ Experience
   <div class="experience-card">
     <div class="experience-logo experience-logo--placeholder">QWEN</div>
     <div class="experience-info">
-      <strong>Alibaba Qwen · Medical Foundation Model</strong><br>
-      <em>Evaluation Algorithm Intern</em><br>
-      Worked on evaluation algorithms and benchmarking for medical foundation models.
+      <strong>Alibaba Group – Qwen Medical Foundation Model Team</strong><br>
+      <em>LLM Evaluation Algorithm Intern · Hangzhou, China · Apr. 2026 – Present</em>
+      <ul class="experience-bullets">
+        <li><strong>Rubric &amp; Ground-Truth Production Pipeline:</strong> Designed session-level evaluation rubrics for multi-turn medical health scenarios and built an end-to-end pipeline for data filtering, LLM-based rubric and ground-truth generation, retrieval-augmented verification, and human review. Produced over 500 verified rubric–ground-truth pairs spanning 7 medical scenarios; evidence-grounded verification increased medical correctness from 73% to 88% and numerical correctness from 35% to 72%.</li>
+        <li><strong>Interactive Multi-Turn Benchmark with AI User Simulation:</strong> Built a Director–Actor–Judge three-agent user simulation framework and packaged it as an interactive benchmark with a unified dialogue interface. Covering 7 medical scenarios and 200+ test cases, the framework reduced hidden-information leakage from 17% to 5% and improved trajectory consistency from 81% to 92% compared to a fine-tuned Qwen-7B user-simulator baseline.</li>
+        <li><strong>Evaluation Skill Design &amp; Iteration:</strong> Designed a nine-dimensional evaluation judge for medical scenarios as a reusable Skill to assess planning, tool invocation, and error recovery. Added parallel sub-judges, online medical fact-checking, adversarial review, reference-range validation, and a safety red-line veto; built an annotation platform for human–model disagreement analysis and regression re-evaluation, achieving 84% score agreement on a 200-case expert calibration set.</li>
+      </ul>
     </div>
   </div>
 </div>
